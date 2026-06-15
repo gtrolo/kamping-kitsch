@@ -196,6 +196,41 @@
 </head>
 <body>
 
+<!-- VERBORGEN CHEERIO AUTOPLAY -->
+<iframe id="cheerio-audio"
+    src="https://www.youtube.com/embed/2V2hojY06xY?autoplay=1&mute=1&loop=1&playlist=2V2hojY06xY&controls=0&disablekb=1&fs=0&modestbranding=1&playsinline=1"
+    style="position:fixed;width:1px;height:1px;top:-9999px;left:-9999px;opacity:0;pointer-events:none;border:none;"
+    allow="autoplay; encrypted-media"
+    allowfullscreen>
+</iframe>
+
+<!-- UNMUTE KNOP -->
+<div id="sound-btn" onclick="toggleSound()" title="Zet geluid aan/uit" style="
+    position:fixed; bottom:90px; left:20px; z-index:200;
+    background:#ffff00; color:#000; font-family:Impact,sans-serif;
+    font-size:0.85rem; padding:12px 14px; border-radius:50%;
+    border:4px dashed #ff007f; cursor:pointer; line-height:1.2;
+    box-shadow:0 0 20px rgba(255,0,127,0.8);
+    animation:stickerwiggle 2.5s ease-in-out infinite;
+    text-align:center; width:64px; height:64px;
+    display:flex; flex-direction:column; align-items:center; justify-content:center;">
+    🔇<br><span style="font-size:0.65rem;">GELUID</span>
+</div>
+
+<script>
+var muted = true;
+function toggleSound() {
+    var iframe = document.getElementById('cheerio-audio');
+    var btn = document.getElementById('sound-btn');
+    muted = !muted;
+    var muteParam = muted ? '&mute=1' : '&mute=0';
+    iframe.src = 'https://www.youtube.com/embed/2V2hojY06xY?autoplay=1' + muteParam + '&loop=1&playlist=2V2hojY06xY&controls=0&disablekb=1&fs=0&modestbranding=1&playsinline=1&start=0';
+    btn.innerHTML = muted
+        ? '🔇<br><span style="font-size:0.65rem;">GELUID</span>'
+        : '🔊<br><span style="font-size:0.65rem;">CHEERIO</span>';
+}
+</script>
+
 <div class="nouelle-bg">
     <span>NOUELLE</span><span>NOUELLE</span><span>NOUELLE</span><span>NOUELLE</span>
     <span>NOUELLE</span><span>NOUELLE</span><span>NOUELLE</span><span>NOUELLE</span>
