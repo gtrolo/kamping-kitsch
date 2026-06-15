@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kamping Kitsch Live feat. Justen de Wildt - CHEERIO!</title>
+    <title>NOUELLE — WE ZIJN SORRY (NIET)</title>
     <style>
         * { box-sizing: border-box; }
 
@@ -27,7 +27,6 @@
             pointer-events: none;
             overflow: hidden;
         }
-
         .nouelle-bg span {
             position: absolute;
             font-family: 'Impact', sans-serif;
@@ -38,110 +37,190 @@
             opacity: 0.18;
             user-select: none;
         }
-
-        /* Rijen van herhalende NOUELLE tekst, afwisselende kleuren en rotaties */
-        .nouelle-bg span:nth-child(1)  { top:  2%; left:-5%; font-size:4.5rem; color:#ffff00; transform:rotate(-8deg); animation: drift1 18s linear infinite; }
-        .nouelle-bg span:nth-child(2)  { top:  7%; left: 30%; font-size:2.8rem; color:#00ffff; transform:rotate(5deg); animation: drift2 22s linear infinite; }
-        .nouelle-bg span:nth-child(3)  { top: 12%; left: 60%; font-size:6rem;   color:#ffffff; transform:rotate(-3deg); animation: drift1 15s linear infinite reverse; }
-        .nouelle-bg span:nth-child(4)  { top: 18%; left:-10%; font-size:3.5rem; color:#ffff00; transform:rotate(12deg); animation: drift2 20s linear infinite; }
-        .nouelle-bg span:nth-child(5)  { top: 23%; left: 45%; font-size:5rem;   color:#00ffff; transform:rotate(-6deg); animation: drift1 25s linear infinite; }
-        .nouelle-bg span:nth-child(6)  { top: 29%; left: 5%;  font-size:2.5rem; color:#ffffff; transform:rotate(4deg); animation: drift2 17s linear infinite reverse; }
+        .nouelle-bg span:nth-child(1)  { top:  2%; left:-5%;  font-size:4.5rem; color:#ffff00; transform:rotate(-8deg);  animation: drift1 18s linear infinite; }
+        .nouelle-bg span:nth-child(2)  { top:  7%; left: 30%; font-size:2.8rem; color:#00ffff; transform:rotate(5deg);   animation: drift2 22s linear infinite; }
+        .nouelle-bg span:nth-child(3)  { top: 12%; left: 60%; font-size:6rem;   color:#ffffff; transform:rotate(-3deg);  animation: drift1 15s linear infinite reverse; }
+        .nouelle-bg span:nth-child(4)  { top: 18%; left:-10%; font-size:3.5rem; color:#ffff00; transform:rotate(12deg);  animation: drift2 20s linear infinite; }
+        .nouelle-bg span:nth-child(5)  { top: 23%; left: 45%; font-size:5rem;   color:#00ffff; transform:rotate(-6deg);  animation: drift1 25s linear infinite; }
+        .nouelle-bg span:nth-child(6)  { top: 29%; left: 5%;  font-size:2.5rem; color:#ffffff; transform:rotate(4deg);   animation: drift2 17s linear infinite reverse; }
         .nouelle-bg span:nth-child(7)  { top: 35%; left: 70%; font-size:4rem;   color:#ffff00; transform:rotate(-10deg); animation: drift1 21s linear infinite; }
-        .nouelle-bg span:nth-child(8)  { top: 41%; left: 20%; font-size:7rem;   color:#00ffff; transform:rotate(7deg); animation: drift2 19s linear infinite; }
-        .nouelle-bg span:nth-child(9)  { top: 47%; left:-8%;  font-size:3rem;   color:#ffffff; transform:rotate(-5deg); animation: drift1 23s linear infinite reverse; }
-        .nouelle-bg span:nth-child(10) { top: 53%; left: 55%; font-size:5.5rem; color:#ffff00; transform:rotate(9deg); animation: drift2 16s linear infinite; }
+        .nouelle-bg span:nth-child(8)  { top: 41%; left: 20%; font-size:7rem;   color:#00ffff; transform:rotate(7deg);   animation: drift2 19s linear infinite; }
+        .nouelle-bg span:nth-child(9)  { top: 47%; left:-8%;  font-size:3rem;   color:#ffffff; transform:rotate(-5deg);  animation: drift1 23s linear infinite reverse; }
+        .nouelle-bg span:nth-child(10) { top: 53%; left: 55%; font-size:5.5rem; color:#ffff00; transform:rotate(9deg);   animation: drift2 16s linear infinite; }
         .nouelle-bg span:nth-child(11) { top: 59%; left: 10%; font-size:3.8rem; color:#00ffff; transform:rotate(-14deg); animation: drift1 20s linear infinite; }
-        .nouelle-bg span:nth-child(12) { top: 65%; left: 40%; font-size:4.2rem; color:#ffffff; transform:rotate(3deg); animation: drift2 24s linear infinite reverse; }
-        .nouelle-bg span:nth-child(13) { top: 71%; left: 75%; font-size:2.9rem; color:#ffff00; transform:rotate(-7deg); animation: drift1 18s linear infinite; }
-        .nouelle-bg span:nth-child(14) { top: 77%; left:-5%;  font-size:6.5rem; color:#00ffff; transform:rotate(11deg); animation: drift2 22s linear infinite; }
-        .nouelle-bg span:nth-child(15) { top: 83%; left: 30%; font-size:3.2rem; color:#ffffff; transform:rotate(-4deg); animation: drift1 26s linear infinite reverse; }
-        .nouelle-bg span:nth-child(16) { top: 89%; left: 60%; font-size:4.8rem; color:#ffff00; transform:rotate(6deg); animation: drift2 19s linear infinite; }
-        .nouelle-bg span:nth-child(17) { top: 94%; left: 10%; font-size:3.6rem; color:#00ffff; transform:rotate(-9deg); animation: drift1 21s linear infinite; }
-        /* Extra overlapping lagen voor dichtheid */
-        .nouelle-bg span:nth-child(18) { top: 15%; left: 80%; font-size:2.5rem; color:#ffff00; transform:rotate(15deg); animation: drift2 17s linear infinite reverse; }
+        .nouelle-bg span:nth-child(12) { top: 65%; left: 40%; font-size:4.2rem; color:#ffffff; transform:rotate(3deg);   animation: drift2 24s linear infinite reverse; }
+        .nouelle-bg span:nth-child(13) { top: 71%; left: 75%; font-size:2.9rem; color:#ffff00; transform:rotate(-7deg);  animation: drift1 18s linear infinite; }
+        .nouelle-bg span:nth-child(14) { top: 77%; left:-5%;  font-size:6.5rem; color:#00ffff; transform:rotate(11deg);  animation: drift2 22s linear infinite; }
+        .nouelle-bg span:nth-child(15) { top: 83%; left: 30%; font-size:3.2rem; color:#ffffff; transform:rotate(-4deg);  animation: drift1 26s linear infinite reverse; }
+        .nouelle-bg span:nth-child(16) { top: 89%; left: 60%; font-size:4.8rem; color:#ffff00; transform:rotate(6deg);   animation: drift2 19s linear infinite; }
+        .nouelle-bg span:nth-child(17) { top: 94%; left: 10%; font-size:3.6rem; color:#00ffff; transform:rotate(-9deg);  animation: drift1 21s linear infinite; }
+        .nouelle-bg span:nth-child(18) { top: 15%; left: 80%; font-size:2.5rem; color:#ffff00; transform:rotate(15deg);  animation: drift2 17s linear infinite reverse; }
         .nouelle-bg span:nth-child(19) { top: 45%; left: 85%; font-size:3rem;   color:#ffffff; transform:rotate(-12deg); animation: drift1 23s linear infinite; }
-        .nouelle-bg span:nth-child(20) { top: 68%; left: 20%; font-size:5rem;   color:#ffff00; transform:rotate(8deg); animation: drift2 20s linear infinite reverse; }
+        .nouelle-bg span:nth-child(20) { top: 68%; left: 20%; font-size:5rem;   color:#ffff00; transform:rotate(8deg);   animation: drift2 20s linear infinite reverse; }
+        @keyframes drift1 { 0%{transform:rotate(-8deg) translateX(0)}  50%{transform:rotate(-8deg) translateX(30px)}  100%{transform:rotate(-8deg) translateX(0)} }
+        @keyframes drift2 { 0%{transform:rotate(5deg)  translateY(0)}  50%{transform:rotate(5deg)  translateY(20px)}  100%{transform:rotate(5deg)  translateY(0)} }
 
-        @keyframes drift1 {
-            0%   { transform: rotate(-8deg) translateX(0px); }
-            50%  { transform: rotate(-8deg) translateX(30px); }
-            100% { transform: rotate(-8deg) translateX(0px); }
-        }
-        @keyframes drift2 {
-            0%   { transform: rotate(5deg) translateY(0px); }
-            50%  { transform: rotate(5deg) translateY(20px); }
-            100% { transform: rotate(5deg) translateY(0px); }
-        }
-
-        /* Alle content boven de achtergrond */
-        .marquee-nouelle, header, .container, footer, .sticker {
+        .marquee-top {
+            background: rgba(0,0,0,0.92);
+            color: #ffff00;
+            font-size: 20px;
+            padding: 10px 0;
+            font-weight: bold;
+            border-bottom: 5px dashed #ff007f;
             position: relative;
             z-index: 1;
         }
 
-        .marquee-nouelle {
-            background: rgba(0, 255, 255, 0.92);
-            color: #ff007f;
-            font-size: 24px;
-            padding: 10px 0;
-            font-weight: bold;
-            border-bottom: 5px dashed #ffff00;
+        header {
+            background: linear-gradient(45deg, rgba(255,0,255,0.9), rgba(0,0,0,0.85), rgba(255,0,127,0.9));
+            padding: 50px 20px 30px;
+            border-bottom: 10px solid #ffff00;
+            position: relative;
+            z-index: 1;
         }
 
-        header {
-            background: linear-gradient(45deg, rgba(255,0,255,0.88), rgba(0,255,255,0.88), rgba(255,255,0,0.88));
-            padding: 40px 20px;
-            border-bottom: 10px solid #00ff00;
+        .sorry-label {
+            font-size: 1rem;
+            color: #ffff00;
+            background: #000;
+            display: inline-block;
+            padding: 4px 14px;
+            margin-bottom: 12px;
+            letter-spacing: 3px;
+            transform: rotate(1deg);
         }
 
         h1 {
-            font-size: 3.5rem;
+            font-size: 3.8rem;
             color: #ffffff;
-            text-shadow: 5px 5px 0px #ff007f, -5px -5px 0px #000;
+            text-shadow: 4px 4px 0px #ff007f, -3px -3px 0px #000, 0 0 40px #ffff00;
             margin: 0 0 10px 0;
-            letter-spacing: 2px;
+            letter-spacing: 3px;
+            animation: headerpulse 2s ease-in-out infinite;
+        }
+        @keyframes headerpulse {
+            0%,100% { text-shadow: 4px 4px 0px #ff007f, -3px -3px 0px #000, 0 0 20px #ffff00; }
+            50%      { text-shadow: 4px 4px 0px #ff007f, -3px -3px 0px #000, 0 0 60px #ffff00; }
         }
 
         .subtitle {
-            font-size: 1.8rem;
-            color: #ffff00;
-            text-shadow: 2px 2px #000;
-            background: #000;
+            font-size: 1.4rem;
+            color: #000;
+            background: #ffff00;
             display: inline-block;
-            padding: 5px 20px;
-            transform: rotate(-2deg);
+            padding: 6px 22px;
+            transform: rotate(-1.5deg);
+            margin-top: 8px;
+        }
+
+        .apology-box {
+            background: rgba(0,0,0,0.88);
+            border: 6px dashed #ffff00;
+            border-radius: 16px;
+            padding: 25px 30px;
+            margin: 30px auto;
+            max-width: 760px;
+            color: #fff;
+            font-family: 'Courier New', monospace;
+            font-size: 1.05rem;
+            line-height: 1.7;
+            text-align: left;
+            position: relative;
+        }
+        .apology-box strong { color: #ffff00; }
+        .apology-box em { color: #ff007f; font-style: normal; font-weight: bold; }
+        .apology-stamp {
+            position: absolute;
+            top: -18px; right: 20px;
+            background: #ff007f;
+            color: #fff;
+            font-size: 0.75rem;
+            font-family: Impact;
+            letter-spacing: 2px;
+            padding: 4px 12px;
+            transform: rotate(3deg);
+            border: 2px solid #ffff00;
+        }
+
+        .marquee-mid {
+            background: rgba(0,255,0,0.9);
+            color: #000;
+            font-size: 20px;
+            padding: 10px 0;
+            font-weight: bold;
+            border-top: 4px solid #000;
+            border-bottom: 4px solid #000;
+            position: relative;
+            z-index: 1;
         }
 
         .container {
             max-width: 1000px;
             margin: 0 auto;
             padding: 20px;
+            position: relative;
+            z-index: 1;
         }
+
+        /* tijdlijn */
+        .tijdlijn {
+            background: rgba(0,0,0,0.88);
+            border: 6px solid #00ffff;
+            border-radius: 16px;
+            padding: 30px;
+            margin: 30px 0;
+            text-align: left;
+        }
+        .tijdlijn h2 { color: #00ffff; font-size: 2rem; margin-top: 0; text-shadow: 2px 2px #ff007f; }
+        .tl-item {
+            display: flex;
+            gap: 16px;
+            align-items: flex-start;
+            margin: 18px 0;
+            border-left: 4px solid #ffff00;
+            padding-left: 16px;
+        }
+        .tl-time {
+            font-size: 1.3rem;
+            color: #ffff00;
+            white-space: nowrap;
+            min-width: 70px;
+        }
+        .tl-text {
+            color: #fff;
+            font-family: 'Courier New', monospace;
+            font-size: 0.95rem;
+            line-height: 1.5;
+        }
+        .tl-text strong { color: #ff007f; }
 
         .video-section {
             background: rgba(0,0,0,0.88);
             border: 8px solid #ff00ff;
             border-radius: 20px;
             padding: 30px;
-            margin: 40px 0;
+            margin: 30px 0;
             box-shadow: 0 0 30px #ffff00;
         }
-
-        h2 {
-            font-size: 2.5rem;
+        h2.vid-title {
+            font-size: 2.2rem;
             color: #ffff00;
             text-transform: uppercase;
-            margin-bottom: 30px;
+            margin-bottom: 10px;
             text-shadow: 2px 2px #ff007f;
         }
-
+        .vid-subtitle {
+            color: #aaa;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9rem;
+            margin-bottom: 25px;
+            font-style: italic;
+        }
         .video-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 25px;
-            margin-top: 20px;
         }
-
         .video-wrapper {
             position: relative;
             padding-bottom: 56.25%;
@@ -149,35 +228,31 @@
             border: 4px solid #00ff00;
             box-shadow: 5px 5px 0px #ff007f;
         }
-
         .video-wrapper iframe {
             position: absolute;
             top: 0; left: 0;
             width: 100%; height: 100%;
         }
-
         .video-label {
             color: #fff;
-            font-size: 0.9rem;
+            font-size: 0.85rem;
             margin-top: 8px;
             font-family: 'Courier New', monospace;
         }
 
         .gallery-section {
-            background: rgba(0, 255, 255, 0.9);
+            background: rgba(0,255,255,0.9);
             color: #000;
             padding: 40px 20px;
             border: 6px dashed #ff007f;
-            margin: 40px 0;
-            transform: rotate(1deg);
+            margin: 30px 0;
+            transform: rotate(0.8deg);
         }
-
         .gallery-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
             gap: 15px;
         }
-
         .gallery-item {
             background: #fff;
             padding: 10px;
@@ -185,7 +260,6 @@
             box-shadow: 8px 8px 0px #ffff00;
             overflow: hidden;
         }
-
         .gallery-item img {
             width: 100%;
             height: 200px;
@@ -193,174 +267,280 @@
             display: block;
             border: 2px solid #000;
         }
-
         .gallery-item p {
-            margin: 10px 0 0 0;
+            margin: 8px 0 0 0;
             font-family: 'Courier New', monospace;
+            font-size: 0.8rem;
             font-weight: bold;
-            font-size: 0.85rem;
         }
 
         .nouelle-banner {
             background: rgba(255,255,0,0.95);
             color: #ff007f;
-            padding: 15px;
-            font-size: 2rem;
+            padding: 15px 20px;
+            font-size: 1.8rem;
             font-weight: bold;
             border: 4px double #000;
             margin: 20px 0;
             text-transform: uppercase;
             animation: blink 0.8s infinite alternate;
         }
-
         @keyframes blink {
-            from { opacity: 1; background: rgba(255,255,0,0.95); }
-            to   { opacity: 0.85; background: rgba(0,255,0,0.95); color: #fff; }
+            from { background: rgba(255,255,0,0.95); color: #ff007f; }
+            to   { background: rgba(255,0,127,0.95); color: #ffff00; }
+        }
+
+        .counter-box {
+            background: rgba(0,0,0,0.9);
+            border: 5px solid #ff007f;
+            border-radius: 12px;
+            padding: 20px;
+            margin: 30px 0;
+            color: #fff;
+        }
+        .counter-box h3 { color: #ffff00; font-size: 1.5rem; margin: 0 0 10px; }
+        .counter-number {
+            font-size: 4rem;
+            color: #ff007f;
+            text-shadow: 3px 3px 0 #000;
+            animation: countpulse 1s ease-in-out infinite;
+        }
+        @keyframes countpulse {
+            0%,100% { transform: scale(1); }
+            50%      { transform: scale(1.08); }
+        }
+        .counter-sub {
+            font-family: 'Courier New', monospace;
+            font-size: 0.85rem;
+            color: #aaa;
+            margin-top: 6px;
         }
 
         footer {
-            background: rgba(0,0,0,0.92);
+            background: rgba(0,0,0,0.95);
             color: #fff;
             padding: 30px;
             border-top: 5px solid #ff00ff;
             font-family: 'Courier New', monospace;
+            font-size: 0.85rem;
+            position: relative;
+            z-index: 1;
         }
+        footer .fine-print { color: #555; font-size: 0.7rem; margin-top: 10px; }
 
         .sticker {
             position: fixed;
             bottom: 20px;
             right: 20px;
-            background: #ff007f;
-            color: #fff;
-            padding: 15px;
+            background: #ffff00;
+            color: #000;
+            padding: 14px 12px;
             border-radius: 50%;
-            border: 4px dashed #ffff00;
+            border: 4px dashed #ff007f;
             transform: rotate(-15deg);
             z-index: 100;
-            font-size: 1.1rem;
-            box-shadow: 0 0 15px rgba(0,0,0,0.5);
+            font-size: 0.95rem;
+            font-family: Impact;
+            box-shadow: 0 0 20px rgba(255,0,127,0.7);
+            line-height: 1.3;
+            animation: stickerwiggle 3s ease-in-out infinite;
         }
+        @keyframes stickerwiggle {
+            0%,100% { transform: rotate(-15deg) scale(1); }
+            50%      { transform: rotate(-12deg) scale(1.08); }
+        }
+
+        .marquee-bottom {
+            background: rgba(255,0,127,0.92);
+            color: #ffff00;
+            font-size: 18px;
+            padding: 10px 0;
+            font-weight: bold;
+            border-top: 4px dashed #ffff00;
+            position: relative;
+            z-index: 1;
+        }
+
+        /* alle content z-index */
+        header, .container, footer, .sticker,
+        .marquee-top, .marquee-mid, .marquee-bottom { position: relative; z-index: 1; }
     </style>
 </head>
 <body>
 
     <!-- NOUELLE ACHTERGROND -->
     <div class="nouelle-bg">
-        <span>NOUELLE</span>
-        <span>NOUELLE</span>
-        <span>NOUELLE</span>
-        <span>NOUELLE</span>
-        <span>NOUELLE</span>
-        <span>NOUELLE</span>
-        <span>NOUELLE</span>
-        <span>NOUELLE</span>
-        <span>NOUELLE</span>
-        <span>NOUELLE</span>
-        <span>NOUELLE</span>
-        <span>NOUELLE</span>
-        <span>NOUELLE</span>
-        <span>NOUELLE</span>
-        <span>NOUELLE</span>
-        <span>NOUELLE</span>
-        <span>NOUELLE</span>
-        <span>NOUELLE</span>
-        <span>NOUELLE</span>
-        <span>NOUELLE</span>
+        <span>NOUELLE</span><span>NOUELLE</span><span>NOUELLE</span><span>NOUELLE</span>
+        <span>NOUELLE</span><span>NOUELLE</span><span>NOUELLE</span><span>NOUELLE</span>
+        <span>NOUELLE</span><span>NOUELLE</span><span>NOUELLE</span><span>NOUELLE</span>
+        <span>NOUELLE</span><span>NOUELLE</span><span>NOUELLE</span><span>NOUELLE</span>
+        <span>NOUELLE</span><span>NOUELLE</span><span>NOUELLE</span><span>NOUELLE</span>
     </div>
 
-    <marquee class="marquee-nouelle" scrollamount="12">
-        +++ CHEERIO +++ JUSTEN DE WILDT +++ CHEERIO +++ DE HIT VAN 2026 +++ ZOLANG IK GEEN VOGELS HOOR FLUITEN +++ CHEERIO +++ CHEERIO +++
+    <!-- BOVENSTE MARQUEE -->
+    <marquee class="marquee-top" scrollamount="10">
+        🚨 LIEVE NOUELLE — DIT IS JE OFFICIËLE STRAF 🚨 &nbsp;&nbsp;&nbsp; CHEERIO WERD HELA NACHT GEDRAAID OP LANDAL DE PEEL &nbsp;&nbsp;&nbsp; JIJ VOND HET NIET LEUK &nbsp;&nbsp;&nbsp; WIJ WEL &nbsp;&nbsp;&nbsp; CHEERIO!!! 🎉
     </marquee>
 
     <header>
-        <h1>CAMPING KITSCH EXTRAVAGANZA</h1>
-        <div class="subtitle">Presenteert de ultieme megahit: CHEERIO van Justen de Wildt!</div>
+        <div class="sorry-label">⚠️ EEN PERSOONLIJKE BOODSCHAP AAN NOUELLE ⚠️</div>
+        <h1>LIEVE NOUELLE,</h1>
+        <div class="subtitle">Jij vond het niets. De rest van Landal De Peel: ALLES. 🕺</div>
     </header>
 
-    <marquee class="marquee-nouelle" direction="right" scrollamount="8" style="background: rgba(0,255,0,0.92); color: #000;">
-        <<< CHEERIO CHEERIO CHEERIO <<< GA IK NIET NAAR BUITEN <<< JUSTEN DE WILDT LIVE <<< BIER, FRIET EN CHEERIO <<<
+    <marquee class="marquee-mid" direction="right" scrollamount="7">
+        👉 CHEERIO 👉 CHEERIO 👉 CHEERIO 👉 CHEERIO 👉 CHEERIO 👉 CHEERIO 👉 CHEERIO 👉 CHEERIO 👉 CHEERIO 👉
     </marquee>
 
     <div class="container">
 
+        <!-- DE OFFICIËLE VERONTSCHULDIGING (die geen verontschuldiging is) -->
+        <div class="apology-box">
+            <div class="apology-stamp">OFFICIEEL DOCUMENT</div>
+            <p>
+                Beste <strong>Nouelle</strong>,<br><br>
+                Allereerst: <em>we zijn niet sorry.</em><br><br>
+                Jij stond daar op Kamping Kitsch en zei — we citeren — dat je het nummer <strong>"niet leuk"</strong> vond.
+                Dat is jouw goed recht. Vrijheid van meningsuiting. Wij respecteren dat volledig.<br><br>
+                Echter. <strong>Diezelfde avond</strong>, op de after party in <em>Landal De Peel</em>, werd <strong>Cheerio van Justen de Wildt</strong>
+                gedraaid. En nog een keer. En daarna nog een keer. En ergens rond 4 uur 's nachts,
+                Nouelle, <em>stond iedereen te zingen.</em> Inclusief jij. <strong>We hebben foto's.</strong><br><br>
+                Deze webpagina is liefdevol, zorgvuldig en met veel te veel vrije tijd gebouwd
+                als permanente herinnering aan die nacht. Cheerio. 🥂
+            </p>
+            <p style="font-size:0.8rem; color:#888; margin:0;">— Vrienden die te veel tijd hebben, De Peel afdeling</p>
+        </div>
+
+        <!-- TIJDLIJN VAN DE NACHT -->
+        <div class="tijdlijn">
+            <h2>📋 DE OFFICIËLE TIJDLIJN VAN DIE NACHT</h2>
+            <div class="tl-item">
+                <div class="tl-time">20:00</div>
+                <div class="tl-text">Aankomst Kamping Kitsch. Nouelle in prima humeur. Cheerio nog niet gedraaid.</div>
+            </div>
+            <div class="tl-item">
+                <div class="tl-time">21:30</div>
+                <div class="tl-text">Eerste keer Cheerio. Nouelle trekt een gezicht. <strong>"Dit vind ik echt niks."</strong> Historische uitspraak.</div>
+            </div>
+            <div class="tl-item">
+                <div class="tl-time">22:15</div>
+                <div class="tl-text">Cheerio opnieuw gedraaid. Crowd gaat los. Nouelle demonstratief naar de bar.</div>
+            </div>
+            <div class="tl-item">
+                <div class="tl-time">23:00</div>
+                <div class="tl-text">After party. Landal De Peel. Aankomst. Sfeer is al aanwezig. DJ laadt op.</div>
+            </div>
+            <div class="tl-item">
+                <div class="tl-time">00:30</div>
+                <div class="tl-text">Cheerio voor de <strong>derde keer</strong> die avond. Nouelle protesteert formeel.</div>
+            </div>
+            <div class="tl-item">
+                <div class="tl-time">01:45</div>
+                <div class="tl-text">Cheerio OPNIEUW. <em>De hele Peel zingt mee.</em> Nouelle staat erbij. Zegt niks meer.</div>
+            </div>
+            <div class="tl-item">
+                <div class="tl-time">03:00</div>
+                <div class="tl-text">🚨 BREAKING: Nouelle gespot met lichtjes enthousiasme. <strong>Lippen bewegen.</strong> Ontkenning achteraf.</div>
+            </div>
+            <div class="tl-item">
+                <div class="tl-time">04:00</div>
+                <div class="tl-text">Cheerio voor de laatste keer. Nouelle mee aan het meezingen. <em>"Zolang ik geen vogels hoor fluiten..."</em> We hoorden het allemaal.</div>
+            </div>
+        </div>
+
+        <!-- TELLER -->
+        <div class="counter-box">
+            <h3>🔢 AANTAL KEER DAT CHEERIO GEDRAAID WERD TERWIJL NOUELLE HET "NIET LEUK" VOND:</h3>
+            <div class="counter-number" id="counter">7</div>
+            <div class="counter-sub">* conservatieve schatting · werkelijk aantal ligt waarschijnlijk hoger · Nouelle was er bij elke keer bij</div>
+        </div>
+
+        <div class="nouelle-banner">
+            🎤 "IK VIND HET ECHT NIKS" — NOUELLE, 2026 &nbsp;|&nbsp; TOCH BLEEF HIJ 🕺
+        </div>
+
+        <!-- VIDEO'S -->
         <section class="video-section">
-            <h2>💥 DE HIT VAN DE EEUW: CHEERIO! 💥</h2>
-            <p style="color: #fff; font-size: 1.2rem;">Kan je er geen genoeg van krijgen? Volume op 100 en gaan met die diepvriesfrikandel!</p>
+            <h2 class="vid-title">🎬 HET NUMMER DAT NOUELLE NIET LEUK VINDT</h2>
+            <p class="vid-subtitle">(maar dat toch de hele nacht gedraaid werd op Landal De Peel)</p>
             <div class="video-grid">
                 <div>
                     <div class="video-wrapper">
                         <iframe src="https://www.youtube.com/embed/2V2hojY06xY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
-                    <p class="video-label">🎬 Officiële Videoclip</p>
+                    <p class="video-label">🎬 Officiële Videoclip — Nouelle's nachtmerrie</p>
                 </div>
                 <div>
                     <div class="video-wrapper">
                         <iframe src="https://www.youtube.com/embed/2ndRA2jigp8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
-                    <p class="video-label">👑 Live op 538 Koningsdag – Breda</p>
+                    <p class="video-label">👑 Live 538 Koningsdag — 50.000 man. Allemaal wél fan.</p>
                 </div>
                 <div>
                     <div class="video-wrapper">
                         <iframe src="https://www.youtube.com/embed/-_V2fBEYaDo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
-                    <p class="video-label">🔥 Cheerio x Outsiders Remix</p>
+                    <p class="video-label">🔥 Outsiders Remix — voor als je het nog een keer wil horen, Nouelle</p>
                 </div>
             </div>
         </section>
 
-        <div class="nouelle-banner">
-            ⚠️ WAARSCHUWING: GEVAARLIJK VEEL CHEERIO HIERONDER! ⚠️
-        </div>
-
+        <!-- FOTO'S -->
         <section class="gallery-section">
-            <h2 style="color: #000; text-shadow: 2px 2px #fff;">📸 JUSTEN DE WILDT IN ACTIE</h2>
-            <p>De zanger van het jaar. Zolang hij geen vogels hoort fluiten, gaat hij niet naar buiten!</p>
+            <h2 style="color:#000; text-shadow:2px 2px #fff;">📸 JUSTEN DE WILDT — DE MAN NOUELLE NIET KAN ONTVLUCHTEN</h2>
+            <p style="color:#000; font-family:'Courier New',monospace;">Hij wordt op elk festival gedraaid. Op elke after party. In elke feesttent. Er is geen ontkomen aan, Nouelle.</p>
             <div class="gallery-grid">
                 <div class="gallery-item">
                     <img src="https://justendewildt.nl/wp-content/uploads/2025/01/Justen-Plein-1-scaled.jpg"
-                         alt="Justen de Wildt live optreden"
+                         alt="Justen de Wildt live"
                          onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-                    <div style="display:none; width:100%; height:200px; background:#ff00ff; align-items:center; justify-content:center; color:#fff; font-size:1rem;">📸 Justen de Wildt</div>
-                    <p>Justen de Wildt live op het plein</p>
+                    <div style="display:none;width:100%;height:200px;background:#ff00ff;align-items:center;justify-content:center;color:#fff;font-size:1rem;">📸 Justen</div>
+                    <p>Justen live — de man zelf 😇</p>
                 </div>
                 <div class="gallery-item">
                     <img src="https://www.jbproductions.nl/uploads/artiest/large/2024082711395214-justen-de-wildt-artiest-1.jpg"
-                         alt="Justen de Wildt portret"
+                         alt="Justen de Wildt"
                          onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-                    <div style="display:none; width:100%; height:200px; background:#00ff00; align-items:center; justify-content:center; color:#000; font-size:1rem;">📸 Justen de Wildt</div>
-                    <p>Justen de Wildt – artiestenfoto</p>
+                    <div style="display:none;width:100%;height:200px;background:#00ff00;align-items:center;justify-content:center;color:#000;font-size:1rem;">📸 Justen</div>
+                    <p>"Hoi Nouelle!" — Justen, waarschijnlijk</p>
                 </div>
                 <div class="gallery-item">
                     <img src="https://www.bekendeartiesten.nl/wp-content/uploads/justen-de-wildt-cheerio-optreden.jpg"
-                         alt="Justen de Wildt Cheerio optreden"
+                         alt="Cheerio optreden"
                          onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-                    <div style="display:none; width:100%; height:200px; background:#ffff00; align-items:center; justify-content:center; color:#000; font-size:1rem;">📸 Cheerio Live</div>
-                    <p>Cheerio – de feestbeuker van 2026</p>
+                    <div style="display:none;width:100%;height:200px;background:#ffff00;align-items:center;justify-content:center;color:#000;font-size:1rem;">📸 Cheerio</div>
+                    <p>Feestje! Jammer dat Nouelle dit "niks" vindt</p>
                 </div>
                 <div class="gallery-item">
                     <img src="https://img.youtube.com/vi/2V2hojY06xY/maxresdefault.jpg"
-                         alt="Cheerio videoclip thumbnail"
+                         alt="Cheerio clip"
                          onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-                    <div style="display:none; width:100%; height:200px; background:#000; align-items:center; justify-content:center; color:#fff; font-size:1rem;">📸 Cheerio Clip</div>
-                    <p>Still uit de officiële Cheerio videoclip</p>
+                    <div style="display:none;width:100%;height:200px;background:#000;align-items:center;justify-content:center;color:#fff;font-size:1rem;">📸 Clip</div>
+                    <p>De videoclip — 11+ miljoen streams. Nouelle: nee.</p>
                 </div>
             </div>
         </section>
 
-        <div class="nouelle-banner" style="animation-duration: 0.4s; background: rgba(0,255,255,0.95); color: #000;">
-            CHEERIO! ZOLANG IK GEEN VOGELS HOOR FLUITEN, GA IK NIET NAAR BUITEN!
+        <div class="nouelle-banner" style="animation-duration:0.5s;">
+            🏕️ LANDAL DE PEEL, 2026 — CHEERIO WERD HELE NACHT GEDRAAID. JIJ WAS ERBIJ. CHEERIO! 🏕️
         </div>
 
     </div>
 
-    <div class="sticker">
-        <b>GEKGEIT!</b><br>Justen Approved 👍
-    </div>
+    <!-- ONDERSTE MARQUEE -->
+    <marquee class="marquee-bottom" scrollamount="9">
+        CHEERIO &nbsp;•&nbsp; CHEERIO &nbsp;•&nbsp; ZOLANG IK GEEN VOGELS HOOR FLUITEN GA IK NIET NAAR BUITEN &nbsp;•&nbsp; CHEERIO &nbsp;•&nbsp; LIEVE NOUELLE WE HOUDEN VAN JE &nbsp;•&nbsp; CHEERIO &nbsp;•&nbsp; DE PEEL VERGEET NOOIT &nbsp;•&nbsp; CHEERIO &nbsp;•&nbsp;
+    </marquee>
 
     <footer>
-        <p>© 2026 Kamping Kitsch One-Pager. Alle rechten voorbehouden aan de foute smaak van Justen de Wildt.</p>
-        <p>Cheerio! Cheerio! Cheerio! — Justen de Wildt, de hit van 2026!</p>
+        <p>© 2026 · Vrienden van Nouelle · Afdeling Troeiteren · Landal De Peel divisie</p>
+        <p>Gemaakt met liefde, bier, en wraak voor iedereen die "Cheerio niet leuk vindt".</p>
+        <p class="fine-print">* Nouelle is wel degelijk een goede vriend. Dit is een grap. Een hele goede grap. Cheerio.</p>
     </footer>
+
+    <div class="sticker">
+        NOUELLE<br>WAS<br>ERBIJ 👀
+    </div>
 
 </body>
 </html>
